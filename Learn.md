@@ -19,3 +19,5 @@
 
 
 # docker compose up --build : does the same work as docker compose up but it adds one extra step before starting the container, docker rebuild the images. this is useful when we have changed our code or modfied our dockerfile. example, if you update your backend code, the old Docker image still contains the old version. Running docker compose up --build tells Docker to create a new image with your latest changes and then start the containers using that updated image.
+
+## CI/CD Pipeline: 
