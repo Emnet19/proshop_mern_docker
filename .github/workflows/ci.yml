@@ -1,0 +1,63 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+
+jobs:
+
+  test:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+      # Download repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+
+      # Install Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+
+      # Backend dependencies
+      - name: Install backend dependencies
+        working-directory: ./backend
+        run: npm install
+
+
+      # Frontend dependencies
+      - name: Install frontend dependencies
+        working-directory: ./frontend
+        run: npm install
+
+
+      # Backend lint
+      - name: Backend lint
+        working-directory: ./backend
+        run: npm run lint
+
+
+      # Frontend lint
+      - name: Frontend lint
+        working-directory: ./frontend
+        run: npm run lint
+
+
+      # Backend tests
+      - name: Backend tests
+        working-directory: ./backend
+        run: npm test
+
+
+      # Frontend tests
+      - name: Frontend tests
+        working-directory: ./frontend
+        run: npm test
