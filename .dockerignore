@@ -4,7 +4,8 @@ backend/node_modules
 
 .git
 .gitignore
-
+database/.mongodb
+database
 .env
 
 npm-debug.log
