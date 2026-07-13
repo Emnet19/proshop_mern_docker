@@ -1,12 +1,22 @@
-FROM node:20
+# Build stage
+FROM node:20 AS build
 
 WORKDIR /app
 
 COPY frontend/package*.json ./
+
 RUN npm install
 
 COPY frontend ./
 
-EXPOSE 3000
+RUN npm run build
 
-CMD ["npm", "start"]
+
+# Production stage
+FROM nginx:alpine
+
+COPY --from=build /app/build /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
