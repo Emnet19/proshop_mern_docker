@@ -23,3 +23,7 @@
 ## CI/CD Pipeline: its a software development practice where developers frequently merge their code changes into shared repository,and every change is automatically checked.
 
 # CI is a security guard before code enters the main application.
+## Uses of CI : - Secret Protection, preventibg Vulnerable code, Immutable Artifacts, Clean build env't (there won't be leftover malware, no hidden filesfrom previous builds, not dependency on a developer's personal machine)
+
+# CD(Continous Development): 
+                
