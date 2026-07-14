@@ -25,5 +25,8 @@
 # CI is a security guard before code enters the main application.
 ## Uses of CI : - Secret Protection, preventibg Vulnerable code, Immutable Artifacts, Clean build env't (there won't be leftover malware, no hidden filesfrom previous builds, not dependency on a developer's personal machine)
 
-# CD(Continous Development): 
-                
+# CD(Continous Development): s the process of automatically taking an application that has already been tested and making it available for users on the internet without requiring manual steps. Instead of building a Docker image, pushing it to Docker Hub, and then manually deploying it to a cloud platform, CD automates the entire process.This ensures that the latest version of the application is always available with minimal effort and fewer human errors.
+
+ # uses: - Automated Delivery Channels:connections that allow different services to communicate and automate deployments - State & Runtime Integrity: keeping sensitive information, such as database connection strings, API keys, passwords, and secret tokens, outside of the source code. - Zero-Downtime Deployment: a deployment strategy that allows users to continue using the application while a new version is being released
+ 
+ # Deploy Hooks: are special URLs or triggers that tell a cloud platform to redeploy an application automatically. Cloud Infrastructure Managment: involves configuring and maintaning cloud services such as Render or Vercel Log Auditing: the process if reading deployment and application logs to identify and fix errors. Health Checks: are automatic tests performed by the cloud platform to verify that the application is running correctly after deployment. 
