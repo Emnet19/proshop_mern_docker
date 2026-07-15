@@ -30,3 +30,5 @@
  # uses: - Automated Delivery Channels:connections that allow different services to communicate and automate deployments - State & Runtime Integrity: keeping sensitive information, such as database connection strings, API keys, passwords, and secret tokens, outside of the source code. - Zero-Downtime Deployment: a deployment strategy that allows users to continue using the application while a new version is being released
  
  # Deploy Hooks: are special URLs or triggers that tell a cloud platform to redeploy an application automatically. Cloud Infrastructure Managment: involves configuring and maintaning cloud services such as Render or Vercel Log Auditing: the process if reading deployment and application logs to identify and fix errors. Health Checks: are automatic tests performed by the cloud platform to verify that the application is running correctly after deployment. 
+
+ # Reverse Proxy: 
