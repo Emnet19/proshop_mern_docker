@@ -1,13 +1,11 @@
 apiVersion: 1
 
 providers:
+  - name: "Proshop Dashboards"
+    folder: ""
+    type: file
+    disableDeletion: false
+    editable: true
 
-- name: proshop Dashboards
-
-  folder: Dashboard
-
-  type: file
-
-  options:
-
-    path: /var/lib/grafana/dashboards
+    options:
+      path: /var/lib/grafana/dashboards
