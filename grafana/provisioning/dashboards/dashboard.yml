@@ -2,9 +2,9 @@ apiVersion: 1
 
 providers:
 
-- name: Default
+- name: proshop Dashboards
 
-  folder: ""
+  folder: production
 
   type: file
 
